@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/image_detailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transperant_bg" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="2dp">
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_detail"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/text_channel_detail"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="@string/channel_name"
+                android:textColor="@color/whitish"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_date_detail"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="0.6"
+                android:gravity="end"
+                android:paddingEnd="10dp"
+                android:text="@string/date"
+                android:textColor="@color/whitish"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detail_headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout2"
+            android:layout_marginBottom="64dp"
+            android:text="headlines"
+            android:textColor="@color/whitish"
+            android:textSize="29sp" />
+
+
+        <TextView
+            android:id="@+id/text_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="24dp"
+            android:paddingEnd="10dp"
+            android:text=""
+            android:textColor="@color/light_grey"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+
+
+
+</FrameLayout>
